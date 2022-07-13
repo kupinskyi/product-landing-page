@@ -1,46 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
-    margin: 0;
-    padding: 0;
+  --text-title-color: rgb(30, 30, 30);
+  --text-description-color: rgb(60, 60, 60);
+  --header-background-color: rgb(237, 164, 184);
+  --background-color: rgb(166, 228, 231);
+  --text-font-family: 'Edu NSW ACT Foundation';
 }
 
 body {
-    background-color: rgb(166, 228, 231);
-    font-family: 'Lato', sans-serif;
+  background-image: url(img/background-ice-cream.png);
+  font-family: var(--text-font-family), sans-serif;
 }
 
 header {
-    position: fixed;
-
-    width: 100%;
-    padding: 0px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(237, 164, 184);
+  position: fixed;
+  width: 100%;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--header-background-color);
+  color: var(--text-title-color);
+  font-weight: bold;
+  font-size: large;
   }
 
-header img {
-    width: 150px;
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.header__logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header img {
+  width: 150px;
+}
+
+.header__slogan {
+  text-transform: uppercase;
 }
 
 li {
-    list-style: none;
+  list-style: none;
   }
 
-  a {
-    color: black;
-    text-decoration: none;
-  }
+a {
+  text-decoration: none;
+  color: var(--text-title-color);
+}
 
 nav > ul {
-    width: 35vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   }
+
+.joinus {
+  padding-top: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+input {
+  width: 100%;
+  max-width: 200px;
+  height: 50px;
+  margin: 20px 20px 5px 20px;
+}
+
+.form__name {
+  display: flex;
+  flex-direction: row;
+}
+
+.form__email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 20px;
+  text-align: center;
+}
+
+#submit {
+  width: 100px;
+  height: 50px;
+  background-color: var(--header-background-color);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 10%;
+}
+
+#submit:hover {
+  width: 110px;
+  height: 55px;
+  background-color: rgba(237, 164, 184, 0.5);
+  font-size: large;
+}
+
+#features {
+  margin: 50px 15%;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.features {
+  display: flex;
+  margin: 50px 0;
+}
+
+.features__pictures > img{
+  height: 64px;
+  width: auto;
+  margin-right: 50px;
+}
+
+#music{
+  display: flex;
+  justify-content: center
+}
+
+iframe {
+  max-width: 560px;
+  width: 100%;
+  margin: 50px 0;
+}
+
+#pricing {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+}
+
+.pricing__box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--header-background-color);
+  width: calc(100% / 3);
+  margin: 20px;
+}
+
+#footer{
+  background-color: var(--header-background-color);
+  margin: 30px 10% 0 10%;
+  padding: 10px;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0;
+}
+
+li {
+  padding: 0 10px;
+}
+
+span {
+display: flex;
+justify-content: flex-end;
+}

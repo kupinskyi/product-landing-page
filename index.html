@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png">
     <link href="style.css" rel="stylesheet" type="text/css">
     <title>Product Landing Page</title>
 </head>
@@ -15,23 +16,100 @@
         <nav id="nav-bar">
             <ul>
                 <li>
-                    <a class="nav__link" href="#">Features</a>
+                    <a class="nav__link" href="#features">Features</a>
                 </li>
                 <li>
-                    <a class="nav__link" href="#">Music</a>
+                    <a class="nav__link" href="#music">Music</a>
                 </li>
                 <li>
-                    <a class="nav__link" href="#">Pricing</a>
+                    <a class="nav__link" href="#pricing">Pricing</a>
                 </li>
             </ul>
-
         </nav>
     </header>
     <main>
-
+        <section class="joinus">
+            <h2>Join Us!</h2>
+            <p class="joinus__description">Sign up with your email address to receive all the delicious news, deals, and updates.</p>
+            <fieldset class="joinus__form">
+                <div class="form__name">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Second Name">
+                </div>
+                <div class="form__email">
+                <form action="https://www.freecodecamp.com/email-submit">
+                    <input id="email" type="email" placeholder="Email Address" required>
+                    <button id="submit" type="submit">Sign Up!</button>
+                </form>
+                </div>
+            </fieldset>
+        </section>
+        <section id="features">
+            <div class="features">
+                <div class="features__pictures">
+                    <img src="img/leaf.png" alt="leaf">
+                </div>
+                <div class="features__text">
+                    <h2>Vegan Certified</h2>
+                    <p>Since 2011 we've been a first mover in the non-dairy ice cream space in Upstate, NY and innovating on “eats like dairy” vegan ice cream. Ultra creamy, simple ingredients and indulgent flavors because the world still needs BETTER plant based ice cream.</p>
+                </div>
+            </div>
+            <div class="features">
+                <div class="features__pictures">
+                    <img src="img/idea.png" alt="idea">
+                </div>
+                <div class="features__text">
+                    <h2>Future Forward</h2>
+                    <p>How are we tackling issues surrounding our food supply chains, sourcing ingredients and offsetting our environmental impact as we grow? We are redefining our vision and strengthening our commitment in 2021.</p>
+                </div>
+            </div>
+            <div class="features">
+                <div class="features__pictures">
+                    <img src="img/brotherhood.png" alt="leaf">
+                </div>
+                <div class="features__text">
+                    <h2>Make With Love</h2>
+                    <p>Since 2011 we've been a first mover in the non-dairy ice cream space in Upstate, NY and innovating on “eats like dairy” vegan ice cream. Ultra creamy, simple ingredients and indulgent flavors because the world still needs BETTER plant based ice cream.</p>
+                </div>
+            </div>
+        </section>
+        <section id="music">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/_XL8BEnIIWs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section id="pricing">
+            <div class="pricing__box">
+                <div class="box-title" id="cassata">- Cassata -</div>
+                <h2>$3</h2>
+                <p class="box-decription">Cassata consists of round sponge cake moistened.</p>
+                <button type="button">Select</button>
+            </div>
+            <div class="pricing__box">
+                <div class="box-title" id="fruitcake">- Fruitcake -</div>
+                <h2>$5</h2>
+                <p class="box-decription">Made with candied or dried fruit, nuts, and spices.</p>
+                <button type="button">Select</button>
+            </div>
+            <div class="pricing__box">
+                <div class="box-title" id="petit">- Petit four -</div>
+                <h2>$7</h2>
+                <p class="box-decription">A petit four is a small bite-sized confectionery.</p>
+                <button type="button">Select</button>
+            </div>
+        </section>
     </main>
-    <footer>
-
+    <footer id="footer">
+        <ul>
+            <li>
+                <a href="#">Privacy</a>
+            </li>
+            <li>
+                <a href="#">Terms</a>
+            </li>
+            <li>
+                <a href="#">Contacts</a>
+            </li>
+        </ul>
+        <span>Copyright 2022. The most delicious ice cream</span>
     </footer>
 </body>
 </html>
